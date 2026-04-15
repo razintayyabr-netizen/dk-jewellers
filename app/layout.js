@@ -1,8 +1,28 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'D.K. Jewellers | Premium Gold & Diamond Jewellery | Hastal, Uttam Nagar',
-  description: 'D.K. Jewellers — Exquisite gold, diamond and traditional jewellery. Hastal, Uttam Nagar, Delhi. Trusted quality since generations.',
+  title: 'D.K. Jewellers | Gold & Diamond Jewellery Shop | Uttam Nagar, Delhi',
+  description: 'D.K. Jewellers — Trusted gold, diamond & bridal jewellery shop in Hastsal, Uttam Nagar, New Delhi. BIS hallmarked, fair pricing, custom orders. Call 8750385065.',
+  keywords: 'jewellery shop uttam nagar, gold jewellery delhi, diamond rings uttam nagar, bridal jewellery set delhi, D.K. Jewellers, jeweller near me, gold shop hastsal, jewellery store uttam nagar, best jeweller delhi, wedding jewellery delhi, bangles uttam nagar, necklace shop delhi, earrings jewellery shop, custom jewellery delhi, BIS hallmarked gold uttam nagar',
+  openGraph: {
+    title: 'D.K. Jewellers | Gold & Diamond Jewellery | Uttam Nagar, Delhi',
+    description: 'Trusted gold & diamond jewellery for generations. BIS hallmarked, fair pricing, custom orders. Visit us at 262-A, Hastsal Village, Uttam Nagar.',
+    type: 'website',
+    locale: 'en_IN',
+    siteName: 'D.K. Jewellers',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'D.K. Jewellers | Gold & Diamond Jewellery | Uttam Nagar, Delhi',
+    description: 'Trusted gold & diamond jewellery for generations. BIS hallmarked, fair pricing. Call 8750385065.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://dk-jewellers-puce.vercel.app',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -11,14 +31,61 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta name="geo.region" content="IN-DL" />
+        <meta name="geo.placename" content="Uttam Nagar, New Delhi" />
+        <meta name="geo.position" content="28.62;77.05" />
+        <meta name="ICBM" content="28.62, 77.05" />
+        <meta name="author" content="D.K. Jewellers" />
+        <meta name="theme-color" content="#D4A853" />
+        <link rel="canonical" href="https://dk-jewellers-puce.vercel.app" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "JewelryStore",
+          "name": "D.K. Jewellers",
+          "description": "Trusted gold & diamond jewellery shop in Hastsal, Uttam Nagar, New Delhi. BIS hallmarked, fair pricing, custom orders.",
+          "url": "https://dk-jewellers-puce.vercel.app",
+          "telephone": ["+918750385065", "+918851327684"],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "262-A, Hastsal Village, Near Bikaner Sweets",
+            "addressLocality": "Uttam Nagar",
+            "addressRegion": "Delhi",
+            "postalCode": "110059",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.62,
+            "longitude": 77.05
+          },
+          "priceRange": "$$",
+          "openingHours": "Mo-Sa 10:00-21:00",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "120"
+          },
+          "sameAs": []
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "D.K. Jewellers",
+          "image": "https://dk-jewellers-puce.vercel.app/images/hero.jpg",
+          "url": "https://dk-jewellers-puce.vercel.app",
+          "telephone": "+918750385065",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "262-A, Hastsal Village, Near Bikaner Sweets, Uttam Nagar",
+            "addressLocality": "New Delhi",
+            "addressRegion": "Delhi",
+            "postalCode": "110059",
+            "addressCountry": "IN"
+          }
+        }) }} />
       </head>
       <body className="antialiased">
         {children}
-        <a href="https://wa.me/91875038065?text=Hi! I'd like to enquire about jewellery at D.K. Jewellers" target="_blank" className="whatsapp-float" aria-label="WhatsApp">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-        </a>
       </body>
     </html>
   );
