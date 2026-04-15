@@ -233,6 +233,19 @@ a { text-decoration: none; color: inherit; }
 .review-label { color: #6B7280; font-size: 12px; }
 .review-cta { text-align: center; margin-top: 40px; }
 
+/* DELIVERY */
+.delivery-grid { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+.delivery-card { background: var(--dark-card); border: 1px solid rgba(212,168,83,0.05); border-radius: 16px; padding: 28px 24px; text-align: center; flex: 1; min-width: 180px; transition: all 0.5s; }
+.delivery-card:hover { border-color: rgba(212,168,83,0.2); transform: translateY(-4px); }
+.delivery-icon { font-size: 32px; margin-bottom: 12px; display: block; }
+.delivery-card h3 { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+.delivery-card p { color: #6B7280; font-size: 13px; line-height: 1.6; }
+.delivery-step { color: var(--gold); font-size: 24px; font-weight: 700; }
+.delivery-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+.delivery-badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.delivery-badge { padding: 8px 16px; border-radius: 999px; background: rgba(212,168,83,0.06); border: 1px solid rgba(212,168,83,0.1); font-size: 13px; color: var(--gold-light); }
+@media (max-width: 768px) { .delivery-grid { flex-direction: column; } .delivery-step { display: none; } }
+
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--dark); }
 ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }

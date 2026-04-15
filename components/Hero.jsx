@@ -15,7 +15,7 @@ export default function Hero() {
           <p className="hero-subtitle-text">Hastsal, Uttam Nagar</p>
           <div className="hero-line" style={{ background: 'linear-gradient(to left, transparent, rgba(212,168,83,0.4))' }} />
         </div>
-        <p className="hero-desc">Exquisite gold &amp; diamond jewellery crafted with love. Timeless pieces for every occasion — weddings, celebrations, and everyday elegance.</p>
+        <p className="hero-desc">Exquisite gold &amp; diamond jewellery crafted with love. Timeless pieces for every occasion — weddings, celebrations, and everyday elegance. <strong style={{ color: '#D4A853' }}>Now delivering across India!</strong></p>
         <div className="hero-ctas">
           <a href="https://wa.me/918750385065?text=Hi! I'd like to enquire about jewellery" target="_blank" className="btn-primary">
             <span>Enquire Now</span>
@@ -24,6 +24,7 @@ export default function Hero() {
           <a href="#collections" className="btn-outline">View Collections</a>
         </div>
         <div className="hero-pills">
+          <div className="hero-pill"><span>📦</span><span style={{ color: '#D4A853' }}>Pan-India Delivery</span></div>
           <div className="hero-pill"><span>📍</span><span>262-A, Hastsal Village, Uttam Nagar, Delhi</span></div>
           <div className="hero-pill"><span>📞</span><a href="tel:+918750385065" style={{ color: '#9CA3AF' }}>8750385065</a></div>
           <div className="hero-pill"><span>📞</span><a href="tel:+918851327684" style={{ color: '#9CA3AF' }}>8851327684</a></div>

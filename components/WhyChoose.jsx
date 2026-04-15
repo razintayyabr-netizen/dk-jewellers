@@ -7,6 +7,7 @@ export default function WhyChoose() {
     { icon: '🔄', title: 'Exchange Policy', desc: 'Easy exchange and upgrade options. Your old gold gets new life.' },
     { icon: '💎', title: 'Latest Designs', desc: 'Fresh designs every season. From traditional to modern — we have it all.' },
     { icon: '🏛️', title: 'Established Legacy', desc: 'Serving since generations in Hastsal, Uttam Nagar. A name you can trust.' },
+    { icon: '📦', title: 'Pan-India Delivery', desc: 'Order from anywhere in India. Insured shipping to your doorstep. Safe & secure packaging.' },
     { icon: '🔒', title: 'Secure Purchases', desc: 'Proper billing, certificates, and guarantee on every purchase.' },
   ];
 
