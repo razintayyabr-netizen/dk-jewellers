@@ -1,12 +1,16 @@
 const categories = [
-  { name: 'Rings', desc: 'Engagement, wedding & fashion rings in gold & diamond.', tag: 'Popular', image: '/images/rings.jpg' },
-  { name: 'Necklaces', desc: 'Stunning necklaces & pendants for every occasion.', tag: '', image: '/images/necklace.jpg' },
-  { name: 'Earrings', desc: 'Elegant earrings — jhumkas, studs, drops & more.', tag: 'Trending', image: '/images/earrings.jpg' },
-  { name: 'Bangles', desc: 'Traditional & modern bangles in gold & mixed metals.', tag: '', image: '/images/bangles.jpg' },
-  { name: 'Pendants', desc: 'Beautiful pendants & lockets — perfect for gifting.', tag: '', image: '/images/pendant.jpg' },
-  { name: 'Chains', desc: 'Gold chains in various designs — lightweight to heavy.', tag: '', image: '/images/chain.jpg' },
-  { name: 'Bridal Sets', desc: 'Complete bridal jewellery sets for your special day.', tag: 'Premium', image: '/images/bridal.jpg' },
-  { name: 'Custom Orders', desc: 'Get jewellery custom-made to your design & budget.', tag: 'Special', image: '/images/pendant.jpg' },
+  { name: 'Gold Rings', desc: 'Engagement rings, wedding bands, cocktail rings, solitaires, cluster rings in 22K & 18K gold.', tag: 'Popular', image: '/images/rings.jpg', items: ['Diamond Rings', 'Solitaire Rings', 'Cluster Rings', 'Wedding Bands', 'Fashion Rings', 'Signet Rings'] },
+  { name: 'Necklaces', desc: 'Gold necklaces, chokers, long chains with pendant sets for every occasion.', tag: 'Best Seller', image: '/images/necklace.jpg', items: ['Gold Necklaces', 'Choker Sets', 'Long Haram', 'Temple Jewellery', 'Layered Necklaces', 'Pearl Necklaces'] },
+  { name: 'Earrings', desc: 'Jhumkas, studs, drops, chandbalis, hoops — traditional & modern designs.', tag: 'Trending', image: '/images/earrings.jpg', items: ['Jhumka Earrings', 'Chandbali', 'Stud Earrings', 'Drop Earrings', 'Hoop Earrings', 'Chandelier Earrings'] },
+  { name: 'Bangles', desc: 'Gold bangles, kadas, cuffs — plain, carved, stone-studded designs.', tag: '', image: '/images/bangles.jpg', items: ['Gold Bangles', 'Stone Bangles', 'Kada', 'Cuff Bangles', 'Carved Bangles', 'Daily Wear Bangles'] },
+  { name: 'Pendants', desc: 'Gold pendants, lockets, religious motifs — perfect for gifting.', tag: '', image: '/images/pendant.jpg', items: ['Gold Pendants', 'Diamond Pendants', 'Lockets', 'Religious Pendants', 'Heart Pendants', 'Alphabet Pendants'] },
+  { name: 'Chains', desc: 'Gold chains — rope, box, cable, snake, wheat patterns in 22K gold.', tag: '', image: '/images/chain.jpg', items: ['Rope Chain', 'Box Chain', 'Cable Chain', 'Snake Chain', 'Wheat Chain', 'Singapore Chain'] },
+  { name: 'Bridal Sets', desc: 'Complete bridal jewellery — necklace, earrings, bangles, maang tikka, nose ring.', tag: 'Premium', image: '/images/bridal.jpg', items: ['Heavy Bridal Set', 'Light Bridal Set', 'Temple Bridal Set', 'Diamond Bridal Set', 'Kundan Bridal Set', 'Custom Bridal Set'] },
+  { name: 'Mangalsutra', desc: 'Traditional & modern mangalsutra designs in gold & diamond.', tag: 'New', image: '/images/chain.jpg', items: ['Traditional Mangalsutra', 'Diamond Mangalsutra', 'Modern Mangalsutra', 'Black Bead Mangalsutra', 'Short Mangalsutra', 'Layered Mangalsutra'] },
+  { name: 'Nose Pins & Rings', desc: 'Gold nose pins, rings, nath — traditional & contemporary styles.', tag: '', image: '/images/rings.jpg', items: ['Nose Pin', 'Nose Ring', 'Nath', 'Diamond Nose Pin', 'Gold Nath', 'Clip Nose Pin'] },
+  { name: 'Anklets & Toe Rings', desc: 'Gold anklets (paayal), toe rings for daily & occasion wear.', tag: '', image: '/images/bangles.jpg', items: ['Gold Anklets', 'Stone Anklets', 'Toe Rings', 'Daily Wear Anklet', 'Bridal Anklet', 'Modern Anklet'] },
+  { name: 'Kids Jewellery', desc: 'Lightweight gold jewellery for children — earrings, bangles, chains.', tag: '', image: '/images/pendant.jpg', items: ['Kids Earrings', 'Kids Bangles', 'Kids Chain', 'Kids Pendant', 'Baby Bangles', 'Kids Bracelet'] },
+  { name: 'Custom Orders', desc: 'Bring your design — we craft it. Custom wedding bands, name pendants, & more.', tag: 'Special', image: '/images/bridal.jpg', items: ['Custom Rings', 'Name Pendants', 'Custom Bangles', 'Replicate Design', 'Engraved Jewellery', 'Budget Custom'] },
 ];
 
 export default function Collections() {
@@ -22,13 +26,18 @@ export default function Collections() {
           {categories.map((cat, i) => (
             <div key={i} className="cat-card">
               <div className="cat-card-img">
-                <img src={cat.image} alt={cat.name} loading="lazy" />
+                <img src={cat.image} alt={`${cat.name} - D.K. Jewellers Hastsal Uttam Nagar`} loading="lazy" />
                 {cat.tag && <span className="cat-tag">{cat.tag}</span>}
               </div>
               <div className="cat-card-body">
                 <h3>{cat.name}</h3>
                 <p>{cat.desc}</p>
-                <a href={`https://wa.me/918750385065?text=Hi! I'm interested in ${cat.name}`} target="_blank" className="cat-book">Enquire →</a>
+                <div className="cat-items">
+                  {cat.items.map((item, j) => (
+                    <span key={j} className="cat-item">{item}</span>
+                  ))}
+                </div>
+                <a href={`https://wa.me/918750385065?text=Hi! I'm interested in ${cat.name} at D.K. Jewellers`} target="_blank" className="cat-book">Enquire →</a>
               </div>
             </div>
           ))}
