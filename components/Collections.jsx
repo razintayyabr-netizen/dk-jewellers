@@ -28,7 +28,7 @@ export default function Collections() {
               <div className="cat-card-body">
                 <h3>{cat.name}</h3>
                 <p>{cat.desc}</p>
-                <a href={`https://wa.me/91875038065?text=Hi! I'm interested in ${cat.name}`} target="_blank" className="cat-book">Enquire →</a>
+                <a href={`https://wa.me/918750385065?text=Hi! I'm interested in ${cat.name}`} target="_blank" className="cat-book">Enquire →</a>
               </div>
             </div>
           ))}

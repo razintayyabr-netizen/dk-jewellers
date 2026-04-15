@@ -26,7 +26,7 @@ export default function Header() {
           <a href="#about">About</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
-          <a href="https://wa.me/91875038065?text=Hi! I'd like to enquire" target="_blank" className="btn-primary">Enquire Now</a>
+          <a href="https://wa.me/918750385065?text=Hi! I'd like to enquire" target="_blank" className="btn-primary">Enquire Now</a>
         </nav>
         <button className="mobile-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           <span style={{ transform: menuOpen ? 'rotate(45deg) translateY(5.5px)' : '' }} />
@@ -40,7 +40,7 @@ export default function Header() {
         <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
         <a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
         <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-        <a href="https://wa.me/91875038065?text=Hi!" target="_blank" className="btn-primary">Enquire Now</a>
+        <a href="https://wa.me/918750385065?text=Hi!" target="_blank" className="btn-primary">Enquire Now</a>
       </div>
     </header>
   );

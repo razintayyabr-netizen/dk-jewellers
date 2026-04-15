@@ -28,7 +28,7 @@ export default function Contact() {
           </a>
         </div>
         <div className="contact-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.0!2d77.05!3d28.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHastal%2C+Uttam+Nagar%2C+Delhi!5e0!3m2!1sen!2sin!4v1" loading="lazy" title="D.K. Jewellers Location" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.0!2d77.05!3d28.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s262A+Hastsal+Village+Uttam+Nagar+New+Delhi+110059!5e0!3m2!1sen!2sin!4v1" loading="lazy" title="D.K. Jewellers Location" />
         </div>
         <p className="contact-address">📍 262-A, Hastsal Village, Near By Bikaner Sweets, Uttam Nagar, New Delhi-110059 · <a href="https://maps.google.com/?q=262A+Hastsal+Village+Uttam+Nagar+New+Delhi+110059" target="_blank">Open in Google Maps →</a></p>
       </div>
